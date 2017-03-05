@@ -1,4 +1,4 @@
-package com.ituple.logging.tracing;
+package com.ituple.logging.appender.nosql;
  
 public class Main {
  

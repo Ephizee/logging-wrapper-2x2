@@ -1,4 +1,4 @@
-package com.ituple.logging.tracing;
+package com.ituple.logging.appender.smtp;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;

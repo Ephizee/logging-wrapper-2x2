@@ -1,0 +1,17 @@
+<Configuration name="Log4jConfiguration" status="trace"
+	strict="true" schema="Log4J-V2.0.xsd">
+
+	<Appenders>
+		<NoSql name="databaseAppender">
+			<MongoDb databaseName="log4j2DB" collectionName="applicationLog"
+				server="localhost:27017" username="" password="" />
+		</NoSql>
+	</Appenders>
+
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="databaseAppender" />
+		</Root>
+
+	</Loggers>
+</Configuration>   

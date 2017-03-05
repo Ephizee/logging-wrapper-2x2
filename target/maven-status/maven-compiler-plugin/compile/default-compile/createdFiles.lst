@@ -1,1 +1,5 @@
+com\ituple\logging\tracing\TestService.class
+com\ituple\logging\appender\nosql\Main.class
 com\ituple\logging\test\SystemDemo.class
+com\ituple\logging\tracing\Main.class
+com\ituple\logging\appender\nosql\TestService.class
