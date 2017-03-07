@@ -6,6 +6,12 @@ import org.apache.logging.log4j.LogManager;
 import java.util.Random;
 
 public class TestService {
+	
+	static {
+        System.setProperty("log4j.configurationFile", "C:\\Users\\PiyushMittal\\git1\\logging-wrapper-2x2\\src\\main\\java\\com\\ituple\\logging\\appender\\smtp\\log4j2_smtp.xml");
+    }
+	
+	
 	private Logger logger = LogManager.getLogger(TestService.class.getName());
 
 	private String[] messages = new String[] { "Hello, World", "Goodbye Cruel World", "You had me at hello" };
