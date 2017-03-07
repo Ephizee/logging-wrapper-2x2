@@ -3,7 +3,7 @@
 
 	<Appenders>
 		 <SMTP name="Mail" subject="Error Log" to="mr.piyushmittal@rediffmail.com" from="pm31121988@gmail.com"
-          smtpHost="smtp.gmail.com" smtpPort="587" bufferSize="50" smtpPassword="Sweetls2607@">
+          smtpHost="smtp.gmail.com" smtpPort="587" bufferSize="50" smtpPassword="xxxx">
     </SMTP>
 	</Appenders>
 
