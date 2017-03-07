@@ -1,8 +1,0 @@
-2017-03-03 15:25:22,667 ERROR error
-2017-03-03 15:25:22,669 ERROR error
-2017-03-03 17:02:35,263 ERROR error
-2017-03-03 17:02:35,265 ERROR error
-2017-03-03 17:02:35,266 ERROR Catching
-java.lang.ArrayIndexOutOfBoundsException: 3
-	at com.ituple.logging.tracing.TestService.exampleException(TestService.java:37) [classes/:?]
-	at com.ituple.logging.tracing.Main.main(Main.java:9) [classes/:?]
