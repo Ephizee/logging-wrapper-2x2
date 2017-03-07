@@ -3,9 +3,25 @@
 
 ### Setup
 
-its a sample POC for log4j2.
-each package is having its classes and respective log4j2 file.
-pick up log4j2 from respective package and place in resources folder and run main class.
+
+#### Type-1
+each package is having its classes and respective log4j2_xxx file.
+pick up log4j2_xxx from respective package, rename it as log4j2 and place in resources folder and run the main class of respective folder.
+
+
+#### Type-2
+each package is having its classes and respective log4j2_xxx file.
+add the following line in TestService.java
+ 
+ param-1: "log4j.configurationFile"
+ param-2: location on your log4j2_xxx.xml file.
+ 
+ example:
+ 
+ static {
+	        System.setProperty("log4j.configurationFile", "C:\\Users\\PiyushMittal\\git1\\logging-wrapper-2x2\\src\\main\\java\\com\\ituple\\logging\\level\\customlevel\\log4j2_xxx.xml");
+	    }
+
 
 
 ### Maven
