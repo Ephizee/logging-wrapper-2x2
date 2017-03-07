@@ -1,6 +1,5 @@
 <Configuration name="Log4jConfiguration" status="trace"
 	strict="true" schema="Log4J-V2.0.xsd">
-
 	<Appenders>
 		 <SMTP name="Mail" subject="Error Log" to="mr.piyushmittal@rediffmail.com" from="pm31121988@gmail.com"
           smtpHost="smtp.gmail.com" smtpPort="587" bufferSize="50" smtpPassword="xxxx">
