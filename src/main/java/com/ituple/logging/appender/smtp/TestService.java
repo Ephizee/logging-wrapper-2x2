@@ -1,9 +1,11 @@
 package com.ituple.logging.appender.smtp;
 
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.LogManager;
-
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.Random;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class TestService {
 	
@@ -30,8 +32,18 @@ public class TestService {
 
 	public String retrieveMessage() {
 		logger.entry();
-		logger.error("error");
+		logger.error("error------------>");
 		logger.info("info");
+		try{
+		throw new Exception();
+		}
+		catch(Exception e){
+			
+			StringWriter sw = new StringWriter();
+			e.printStackTrace(new PrintWriter(sw));
+			
+			logger.error(sw.toString());}
+		
 		String testMsg = getMessage(getKey());
 
 		return logger.exit(testMsg);
@@ -44,6 +56,7 @@ public class TestService {
 			logger.error("An exception should have been thrown");
 		} catch (Exception ex) {
 			logger.catching(ex);
+			
 		}
 		logger.exit();
 	}

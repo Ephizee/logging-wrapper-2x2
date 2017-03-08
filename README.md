@@ -18,10 +18,11 @@ add the following line in TestService.java
  
  example:
  
+```java
  static {
 	        System.setProperty("log4j.configurationFile", "C:\\Users\\PiyushMittal\\git1\\logging-wrapper-2x2\\src\\main\\java\\com\\ituple\\logging\\level\\customlevel\\log4j2_xxx.xml");
 	    }
-
+```
 
 
 ### Maven

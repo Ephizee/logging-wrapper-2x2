@@ -3,9 +3,17 @@ package com.ituple.logging.appender.rollingfile;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+import java.net.URL;
 import java.util.Random;
 
 public class TestService {
+
+	static {
+		URL location = Main.class.getProtectionDomain().getCodeSource().getLocation();
+		System.setProperty("log4j.configurationFile", location.getPath().toString().replace("/target/classes/",
+				"/src/main/java/com/ituple/logging/appender/rollingfile/log4j2_rollingfile.xml"));
+	}
+
 	private Logger logger = LogManager.getLogger(TestService.class.getName());
 
 	private String[] messages = new String[] { "Hello, World", "Goodbye Cruel World", "You had me at hello" };

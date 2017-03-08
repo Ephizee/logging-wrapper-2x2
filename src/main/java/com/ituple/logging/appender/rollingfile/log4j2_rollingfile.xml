@@ -7,7 +7,6 @@
 		</Property>
 		<Property name="filename-perf-error">C:\workspaces\log4j2\logging-wrapper-2x2\perf_error.log
 		</Property>
-
 	</Properties>
 
 	<Appenders>
@@ -34,20 +33,8 @@
 	</Appenders>
 
 	<Loggers>
-		<!-- <AsyncRoot level="trace"> <AppenderRef ref="appender-perf" /> </AsyncRoot> -->
-
-		<!--  <Root level="error">
-			<AppenderRef ref="appender-perf-error" />
-		</Root>!-->
-		 <Root level="trace">
+		<Root level="trace">
 			<AppenderRef ref="appender-perf" />
 		</Root>
-		
-		<!--  <Root level="trace">
-      <AppenderRef ref="appender-perf-error" level="error" />
-      <AppenderRef ref="appender-perf" level="info" />
-    </Root> -->
-
-
 	</Loggers>
 </Configuration>   
