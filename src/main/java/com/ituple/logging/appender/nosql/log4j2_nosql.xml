@@ -4,7 +4,8 @@
 	<Appenders>
 		<NoSql name="databaseAppender">
 			<MongoDb databaseName="log4j2DB" collectionName="applicationLog"
-				server="localhost:27017" username="" password="" />
+				server="localhost" username="" password="" />
+				
 		</NoSql>
 	</Appenders>
 
