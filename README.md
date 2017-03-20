@@ -60,3 +60,43 @@ public class Main {
     }
 }
 ```
+
+
+
+
+## Appenders
+
+### NoSQLAppender
+
+NoSQLAppender requires databaseName, collectionName, server, username and password.
+
+
+```xml
+
+<Configuration name="Log4jConfiguration" status="trace"
+	strict="true" schema="Log4J-V2.0.xsd">
+
+	<Appenders>
+		<NoSql name="databaseAppender">
+			<MongoDb databaseName="log4j2DB" collectionName="applicationLog"
+				server="localhost" username="" password="" />
+				
+		</NoSql>
+	</Appenders>
+
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="databaseAppender" />
+		</Root>
+
+	</Loggers>
+</Configuration>   
+```
+
+
+
+
+
+
+references:
+https://logging.apache.org/log4j/2.x/manual/appenders.html#NoSQLAppender
