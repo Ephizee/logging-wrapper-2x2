@@ -114,7 +114,7 @@ NoSQLAppender requires databaseName, collectionName, server, username and passwo
 	</Loggers>
 </Configuration>  
 ```
-kindly go through https://youtu.be/E9ppqlduZTQ
+kindly go through https://youtu.be/E9ppqlduZTQ for more details on SMTP
 
 
 
