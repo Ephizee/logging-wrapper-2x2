@@ -94,6 +94,28 @@ NoSQLAppender requires databaseName, collectionName, server, username and passwo
 ```
 
 
+### SMTPAppender
+
+```xml
+<Configuration name="Log4jConfiguration" status="trace"
+	strict="true" schema="Log4J-V2.0.xsd">
+	<Appenders>
+		<SMTP name="Mail" subject="Error Log" to="mr.piyushmittal@rediffmail.com"
+			from="pm31121988@gmail.com" smtpHost="smtp.gmail.com" smtpPort="465"
+			bufferSize="50" smtpPassword="xxx" ignoreExceptions="flase"
+			smtpUsername="pm31121988" smtpProtocol="smtps">
+		</SMTP>
+	</Appenders>
+
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="Mail" />
+		</Root>
+	</Loggers>
+</Configuration>  
+```
+kindly go through https://youtu.be/E9ppqlduZTQ
+
 
 
 
